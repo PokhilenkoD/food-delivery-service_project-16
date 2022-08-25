@@ -37,8 +37,12 @@
 
 // comment
 .commentBox {
+  margin-left: 16px;
+
   max-width: 501px;
   height: 227px;
+
+  border-radius: 0 35px 35px 35px;
 
   background-color: #fefefe;
 }
@@ -53,7 +57,6 @@
 
   outline: 1px solid red;
 }
-
 .comment__text {
   margin-left: 14px;
   margin-bottom: 40px;
@@ -73,15 +76,13 @@
   display: flex;
 
   margin-left: 14px;
-  
+
   max-width: 160px;
   border-right: 0.854167px solid #7eb101;
 }
-
 .commentator-NameandAbout {
   margin-left: 16px;
 }
-
 .commentator__name {
   font-family: 'Roboto';
   font-style: normal;
