@@ -6,38 +6,92 @@
 
     background-image: url(/src/images/customers_say/bg_customers_mob.svg);
   }
+  .customers__textContainer {
+    margin-left: 20px;
+    padding-top: 60px;
+    margin-bottom: 32px;
+  }
   .customers__title {
     max-width: 280px;
+
+    margin-bottom: 20px;
 
     font-weight: 700;
     font-size: 28px;
     line-height: calc(33 / 28);
 
-    color: #2c2c2c;
+    color: var(--main-txt-color);
   }
   .ml {
   }
   .customers__subtitle {
+    font-weight: 400;
+    line-height: calc(16 / 14);
+
+    color: var(--main-txt-color);
   }
   .commentators-section {
+    margin-left: 20px;
+    margin-right: 20px;
   }
-  .firstCommentBox {
+  .commentBox {
+    border-radius: 0px 30px 30px 30px;
+
+    background-color: var(--main-bg-color);
+
+    &:first-child {
+      margin-bottom: 24px;
+    }
   }
+
   .svg-flex-container {
   }
   .comment__rating {
+    padding-left: 8px;
+    padding-top: 8px;
+
+    margin-bottom: 28px;
   }
   .comment__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    padding-left: 8px;
+    margin-bottom: 40px;
+
+    max-width: 264px;
+
+    color: var(--main-txt-color);
   }
   .commentator {
+    display: flex;
+    max-width: 160px;
+
+    margin-left: 8px;
+    padding-bottom: 8px;
   }
   .commentator-NameandAbout {
+    width: 94px;
+
+    margin-left: 16px;
+
+    border-right: 0.854167px solid #7eb101;
   }
   .commentator__name {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    color: var(--main-txt-color);
   }
   .commentator__about {
-  }
-  .secondCommentBox {
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+    /* Black */
+
+    color: #2c2c2c;
   }
 }
 
@@ -87,7 +141,7 @@
     display: flex;
   }
 
-  .firstCommentBox {
+  .commentBox {
     margin-left: 16px;
     margin-right: 139px;
 
@@ -96,14 +150,7 @@
 
     border-radius: 0px 30px 30px 30px;
 
-    background-color: #fefefe;
-  }
-  .secondCommentBox {
-    width: 501px;
-    height: 227px;
-
-    background-color: #fefefe;
-    border-radius: 0px 30px 30px 30px;
+    background-color: var(--main-bg-color);
   }
 
   .svg-flex-container {
