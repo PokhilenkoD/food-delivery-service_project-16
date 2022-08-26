@@ -1,8 +1,19 @@
 @media (max-width: 479px) {
   .customers-container {
+    min-width: 320px;
     max-width: 480px;
+    height: 769px;
+
+    background-image: url(/src/images/customers_say/bg_customers_mob.svg);
   }
   .customers__title {
+    max-width: 280px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+
+    color: #2c2c2c;
   }
   .ml {
   }
@@ -50,8 +61,6 @@
     padding-top: 100px;
     margin-bottom: 20px;
 
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 42px;
     line-height: calc(49 / 42);
@@ -65,8 +74,6 @@
   .customers__subtitle {
     margin-bottom: 32px;
 
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19 / 16);
@@ -123,8 +130,6 @@
     margin-left: 14px;
     margin-bottom: 40px;
 
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: calc(21 / 18);
@@ -146,19 +151,12 @@
     margin-left: 16px;
   }
   .commentator__name {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
     line-height: 150%;
 
     color: #2c2c2c;
   }
   .commentator__about {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 150%;
 
     color: #2c2c2c;
