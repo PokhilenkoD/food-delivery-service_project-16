@@ -37,7 +37,7 @@
 }
 @media (min-width: 1280px) {
   .customers-container {
-    background-image: url(/src/images/customers/customers__bg@1x.jpg);
+    background-image: url(/src/images/customers_say/bg_customers_desk.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -102,19 +102,20 @@
   .svg-flex-container {
     display: flex;
 
+    max-width: 100px;
     height: 16px;
 
     margin-bottom: 34px;
   }
   .comment__rating {
-    width: 17.24px;
+    width: 100px;
     height: 16px;
 
     margin-left: 14px;
     margin-top: 14px;
     margin-bottom: 28px;
 
-    //   outline: 1px solid red;
+    // outline: 1px solid red;
   }
   .comment__text {
     max-width: 473px;
