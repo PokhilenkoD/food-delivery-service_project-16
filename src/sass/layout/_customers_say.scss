@@ -23,6 +23,7 @@
 .ml {
   margin-left: 16px;
 }
+
 .customers__subtitle {
   margin-bottom: 32px;
 
@@ -38,7 +39,7 @@
 // commentators
 
 .commentators {
-    display: flex;
+  display: flex;
 }
 .firstCommentBox {
   margin-left: 16px;
@@ -59,15 +60,22 @@
   border-radius: 0px 30px 30px 30px;
 }
 
-.comment__rating {
-  width: 100px;
+.svg-flex-container {
+  display: flex;
+
   height: 16px;
 
-  margin-top: 14px;
+  margin-bottom: 28px;
+}
+.comment__rating {
+  width: 17.24px;
+  height: 16px;
+
   margin-left: 14px;
+  margin-top: 14px;
   margin-bottom: 28px;
 
-  outline: 1px solid red;
+  //   outline: 1px solid red;
 }
 .comment__text {
   margin-left: 14px;
