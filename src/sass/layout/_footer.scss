@@ -163,7 +163,7 @@
 }
 
 .more-info__list {
-  @extend %reset-list;
+  
   display: flex;
   justify-content: center;
   gap: 32px;
