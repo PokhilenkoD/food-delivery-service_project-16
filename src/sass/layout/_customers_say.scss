@@ -1,10 +1,12 @@
 // mobile
 .customers-container {
   min-width: 320px;
-  max-width: 767px;
+  // max-width: 767px;
   height: 769px;
 
   background-image: url(/src/images/customers_say/bg_customers_mob.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customers__textContainer {
   margin-left: 20px;
@@ -53,10 +55,10 @@
   font-size: 16px;
   line-height: 19px;
 
+  // max-width: 264px;
   padding-left: 8px;
+  padding-right: 8px;
   margin-bottom: 40px;
-
-  max-width: 264px;
 
   color: var(--main-txt-color);
 }
@@ -94,6 +96,14 @@
 // tablet
 
 @media (min-width: 768px) and (max-width: 1279px) {
+  .customers-container {
+    height: 544px;
+    min-width: 768px;
+    // max-width: 1279px;
+
+    background-image: url(/src/images/customers_say/bg_customers_tab.svg);
+    background-repeat: no-repeat;
+  }
   .customers__title {
     font-size: 42px;
   }
@@ -110,7 +120,7 @@
   }
   .comment__text {
     max-width: 312px;
-    
+
     font-size: 18px;
   }
 }
