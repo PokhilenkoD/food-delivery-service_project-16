@@ -9,12 +9,26 @@
       font-size: 42px;
       line-height: calc(50px / 42px);
       max-width: 550px;
+      line-height: 1.18;
+      min-width: 266px;
+    }
+
+    @media screen and (min-width: 480px) {
+      width: 300px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 42px;
+      line-height: 1.2;
+      width: 474px;
     }
 
     @media screen and (min-width: 1280px) {
       font-size: 48px;
       line-height: calc(58px / 48px);
       max-width: 459px;
+      line-height: 1.2;
+      width: 466px;
     }
   }
 
@@ -30,6 +44,14 @@
       line-height: calc(24px / 16px);
       max-width: 336px;
       margin-top: 44px;
+      line-height: 1.5;
+      margin-top: 28px;
+      min-width: 266px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      width: 336px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -37,6 +59,7 @@
       line-height: calc(24px / 16px);
       max-width: 502px;
       margin-top: 28px;
+      width: 502px;
     }
   }
 
@@ -58,129 +81,165 @@
     &:hover,
     &:focus {
       background: var(--accent-bg-color-hover);
-    }
-  }
-}
+      display: inline-block;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1.5;
+      margin-top: 28px;
+      width: 98px;
+      height: 32px;
+      background-color: #bbf330;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
 
-.box-hero {
-  padding-top: 60px;
-  padding-bottom: 50px;
-  height: 370px;
-
-  @media screen and (min-width: 768px) {
-    height: 470px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-top: 159px;
-    height: 608px;
-  }
-}
-
-.swiper-one {
-  position: relative;
-  left: 380px;
-  bottom: 245;
-
-  @media screen and (min-width: 1280px) {
-    left: 650px;
-    bottom: 430;
-  }
-}
-
-.border-swiper {
-  display: none;
-  width: 320px;
-  height: 320px;
-  border: 14px solid var(--main-border-color);
-  border-radius: 50%;
-  overflow: hidden;
-
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
-
-  @media screen and (min-width: 1280px) {
-    display: block;
-    width: 580px;
-    height: 580px;
-    border: 26px solid var(--main-border-color);
-  }
-}
-
-.scrole {
-  &__button {
-    border: none;
-    border-radius: 8px;
-    background: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-
-    &:hover,
-    &:focus {
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-      fill: #7eb101;
+      &:hover,
+      &:focus {
+        background-color: #b5ff00;
+      }
     }
   }
 
-  &__icon {
-    width: 12px;
-    height: 20px;
+  .box-hero {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    height: 370px;
+
+    @media screen and (min-width: 768px) {
+      height: 470px;
+    }
 
     @media screen and (min-width: 1280px) {
-      width: 17px;
-      height: 29px;
+      padding-top: 159px;
+      height: 608px;
     }
   }
-}
 
-.left-btn {
-  display: none;
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    display: block;
+  .swiper-one {
     position: relative;
-    left: 370px;
-    bottom: 420px;
-    width: 34px;
-    height: 28px;
+    left: 380px;
+    bottom: 245;
+
+    @media screen and (min-width: 1280px) {
+      left: 650px;
+      bottom: 430;
+    }
   }
-}
 
-.right-btn {
-  display: none;
+  .border-swiper {
+    display: none;
+    width: 320px;
+    height: 320px;
+    border: 14px solid var(--main-border-color);
+    border-radius: 50%;
+    overflow: hidden;
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    display: block;
-    position: relative;
-    left: 675px;
-    bottom: 448px;
-    width: 34px;
-    height: 28px;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: block;
+      width: 580px;
+      height: 580px;
+      border: 26px solid var(--main-border-color);
+    }
   }
-}
 
-.left-button {
-  display: none;
+  .scrole {
+    &__button {
+      border: none;
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 
-  @media screen and (min-width: 1280px) {
-    display: block;
-    position: relative;
-    left: 635px;
-    bottom: 740px;
-    width: 48px;
-    height: 40px;
+      &:hover,
+      &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+        fill: #7eb101;
+      }
+    }
+
+    &__icon {
+      width: 12px;
+      height: 20px;
+
+      @media screen and (min-width: 1280px) {
+        width: 17px;
+        height: 29px;
+      }
+    }
   }
-}
 
-.right-button {
-  display: none;
+  .left-btn {
+    display: none;
 
-  @media screen and (min-width: 1280px) {
-    display: block;
-    position: relative;
-    left: 1195px;
-    bottom: 780px;
-    width: 48px;
-    height: 40px;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      display: block;
+      position: relative;
+      left: 370px;
+      bottom: 420px;
+      width: 34px;
+      height: 28px;
+    }
+  }
+
+  .right-btn {
+    display: none;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      display: block;
+      position: relative;
+      left: 675px;
+      bottom: 448px;
+      width: 34px;
+      height: 28px;
+    }
+  }
+
+  .left-button {
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      display: block;
+      position: relative;
+      left: 635px;
+      bottom: 740px;
+      width: 48px;
+      height: 40px;
+    }
+  }
+
+  .right-button {
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      display: block;
+      position: relative;
+      left: 1195px;
+      bottom: 780px;
+      width: 48px;
+      height: 40px;
+    }
+  }
+
+  .border {
+    border: 14px solid #ffe550;
+    border-radius: 50%;
+    overflow: hidden;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 320px;
+      height: 320px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      border: 26px solid #ffe550;
+      display: block;
+      width: 580px;
+      height: 580px;
+    }
   }
 }
