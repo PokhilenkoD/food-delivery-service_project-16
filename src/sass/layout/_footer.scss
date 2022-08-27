@@ -1,6 +1,6 @@
 .footer {
   height: 619px;
-  background-color: #fefefe;
+  background-color: var(--main-bg-color);
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
   @media screen and (min-width: 768px) {
@@ -45,23 +45,19 @@
     }
   }
 
-  &__link {
-    @extend %reset-link;
-    font-family: 'Roboto';
-    font-style: normal;
+  &__link {      
     font-weight: 400;
     font-size: 14px;
     line-height: calc(16 / 14);
+    color: #000000;
   }
 }
 
-.footer__title {
-  font-family: 'Roboto';
-  font-style: normal;
+.footer__title {  
   font-weight: 500;
   font-size: 14px;
   line-height: calc(21 / 14);
-  color: #2c2c2c;
+  color: var(--main-txt-color);
   margin-bottom: 12px;
 }
 
@@ -88,13 +84,13 @@
   // height: 50px;
   padding: 12px 12px;
   margin-bottom: 20px;
-  border: 0.854167px solid #ffe550;
+  border: 0.854167px solid var(--main-border-color);
   border-radius: 30px;
   outline: transparent;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(18 / 12);
-  color: #505050;
+  color: var(--placeholder-txt-color);
   background-color: transparent;
 
   @media screen and (max-width: 345px) {
@@ -121,18 +117,18 @@
   font-weight: 500;
   font-size: 13px;
   line-height: calc(20 / 13);
-  color: #2c2c2c;
+  color: var(--main-txt-color);
 
   background-color: transparent;
-  border: 0.854167px solid #7eb101;
+  border: 0.854167px solid var(--secondary-txt-color);
   border-radius: 30px;
   padding: 11px 22px;
 
-  transition: background-color 250ms var(--timing-fuction);
+  transition: background-color var(--animations);
 
   &:hover,
   &:focus {
-    background-color: #ffe550;
+    background-color: var(--main-border-color);
   }
 }
  
@@ -142,7 +138,7 @@
   font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
-  color: #2c2c2c;
+  color: var(--main-txt-color);
   user-select: none;
   text-underline-position: under;
   margin-right: auto;
@@ -155,7 +151,7 @@
 }
 
 .footer-policy__link {
-  color: #7eb101;
+  color: var(--secondary-txt-color);
 }
 
 .footer__more-info {
@@ -182,7 +178,7 @@
   font-size: 10px;
   line-height: calc(12 / 10);
   text-decoration-line: underline;
-  color: #7eb101;
+  color: var(--secondary-txt-color);
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
@@ -195,7 +191,7 @@
   font-size: 10px;
   line-height: calc(12 / 10);
   text-align: center;
-  color: #2c2c2c;
+  color: var(--main-txt-color);
   margin-top: 40px;
 
   @media screen and (min-width: 768px) {
