@@ -1,6 +1,8 @@
 .header{
+  position: fixed;
   width: 100%;
   min-height: 72px;
+  z-index: 999;
 
   background-color: var(--main-bg-color);
 
@@ -26,9 +28,6 @@
   gap: 28px;
   margin-left: auto;
 
-  @media screen and (max-width: 767px){
-
-  }
 }
 
 .header__logo{
@@ -36,13 +35,12 @@
 }
 
 .header__list{
+  position: inherit;
   gap: 28px;
   margin-left: auto;
   align-items: center;
   
   @media screen and (max-width: 767px){
-    width: 130px;
-    height: 255px;
     display: none;
   }
   
@@ -51,27 +49,33 @@
   }
 }
 
-.header__item{
+
+.header__link{
   font-size: 14px;
   line-height: 1.14;
-  color:var(--main-txt-color) ;
-  cursor: pointer;
+  color:var(--main-txt-color);
 
   @media screen and (max-width: 767px) {
     line-height: 1.19;
     color: #000000;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 16px;
+    
   }
   @media screen and (max-width:1279px) {
     color: #000000;
   }
 }
+
 .header__link:active,
 .header__link:hover,
 .header__link:focus{
   color: var(--accent-bg-color);
+  text-decoration: underline var(--accent-bg-color);
+
+  @media screen and (max-width: 767px){
+    color: #000000;
+    text-decoration: none;
+    background-color: var(--accent-bg-color);
+  }
 }
 
 .header__btn{
@@ -112,74 +116,12 @@
 }
 
 .current{
-  color: var(--accent-bg-color);
-  text-decoration: underline var(--accent-bg-color);
-
   @media screen and (max-width: 767px) {
-    color: #000000;
-    text-decoration: none;
-    background-color: var(--accent-bg-color);
     border-radius: 30px 0px 0px 0px;
   }
-}
 
-.mobile-menu__icon{
-  fill: var(--secondary-txt-color);
-  background-color: var(--main-bg-color);
-  border: none;
   @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.modal__btn{
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  border: none;
-  padding: 0;
-  background-color: inherit;
-  fill: #000000;
-
-  &:hover,
-  &:focus{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-  }
-}
-
-.menu__container{
-  position: fixed;
-  top: 50px;
-  right: 21px;
-  transform: translateX(100%);
-  overflow-y: scroll;
-  z-index: 99;
-  opacity: 0;
-  
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.menu__container.is-open{
-  transform: translateX(0);
-  pointer-events: initial;
-  visibility: visible;
-  opacity: 1;
-}
-
-.mobile__list{
-  gap: 28px;
-  margin-left: auto;
-  align-items: center;
-  background-color: var(--main-bg-color);
-  
-  @media screen and (max-width: 767px){
-    width: 130px;
-    height: 255px;
-    
-
-    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-    border-radius: 30px 0px 30px 30px;
+    color: var(--accent-bg-color);
+    text-decoration: underline var(--accent-bg-color)
   }
 }
