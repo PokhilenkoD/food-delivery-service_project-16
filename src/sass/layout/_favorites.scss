@@ -123,17 +123,14 @@ li {
 
   padding: 0;
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
+    gap: 32px;
   }
-  @media (min-width: 1280px) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+
 }
 .dish-list__item {
   // border: 11px solid #ffe550;
