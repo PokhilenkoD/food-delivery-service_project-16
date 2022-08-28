@@ -207,13 +207,12 @@
   color: var(--placeholder-txt-color);
   background-color: transparent;
 
-//  &__input:hover {
-// border-color: var(--secondary-txt-color);
-//  }
+  transition: background-color var(--animations);
 
-//  &__input:focus {
-//   border-color: var(--secondary-txt-color);
-//  }
+  &:hover,
+  &:focus {
+    border-color: var(--secondary-txt-color);
+  }
 
   @media screen and (min-width: 480px) {
     margin-right: 13px;
