@@ -1,0 +1,12 @@
+.mobile__container{
+  position: fixed;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  z-index: 99; 
+  overflow-y: scroll;
+
+  top:0;
+  right:0;
+  background-color: var(--main-bg-color);
+}
