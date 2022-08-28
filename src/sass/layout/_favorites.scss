@@ -1,19 +1,25 @@
 li {
   list-style-type: none;
 }
+.margin100 {
+  @media (min-width: 768px) {
+    margin-bottom: 100px;
+  }
+}
 .mob-hidden {
   display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
-// - - - - - - - - - - 
+// - - - - - - - - - -
 
 .favorites {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.favorites-text {
 }
 
 .favorites__title {
@@ -28,16 +34,32 @@ li {
   margin-bottom: 20px;
 
   color: var(--main-txt-col);
+
+  @media (min-width: 768px) {
+    padding-top: 100px;
+
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49 / 42);
+  }
 }
 .favorites__subtitle {
   min-width: 280px;
+  font-style: normal;
 
   font-weight: 400;
   line-height: calc(16 / 14);
 
+  margin-bottom: 60px;
+
   text-align: center;
 
   color: var(--main-txt-col);
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
 }
 
 // dish - - - - - - - -
@@ -59,8 +81,36 @@ li {
   transition: var(--animations);
 
   &:hover {
-    border: 11px solid #bbf330;
+    border: 11px solid var(--accent-bg-color-hover);
     border-radius: 139.658px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 336px;
+    height: 338px;
+    border: 14px solid var(--main-border-color);
+    border-radius: 167.59px;
+
+    padding: 14px;
+
+    &:hover {
+      border: 14px solid var(--accent-bg-color-hover);
+      border-radius: 167.59px;
+    }
+  }
+  @media (min-width: 1280px) {
+    width: 394px;
+    height: 397px;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 16px solid var(--main-border-color);
+    border-radius: 197.5px;
+
+    &:hover {
+      border: 16px solid var(--accent-bg-color-hover);
+      border-radius: 197.5px;
+    }
   }
 }
 
@@ -72,6 +122,18 @@ li {
   gap: 20px;
 
   padding: 0;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .dish-list__item {
   // border: 11px solid #ffe550;

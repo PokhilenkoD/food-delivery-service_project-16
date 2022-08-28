@@ -7,14 +7,12 @@
     <title>Favorites</title>
   </head>
   <body>
-    <section class="section">
+    <section class="section margin100">
       <div class="container favorites">
-        <div class="favorites-text">
-          <h1 class="favorites__title">Some of Our Favorites</h1>
-          <p class="favorites__subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
+        <h1 class="favorites__title">Some of Our Favorites</h1>
+        <p class="favorites__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
         <!-- ! dish list -->
         <ul class="dish-list">
           <div class="dish-border">
@@ -30,39 +28,46 @@
           <div class="dish-border">
             <li class="dish-list__item">
               <a href="#">
-                <img
-                  src="/src/images/favorites/Pasta_m@1x.png"
-                  alt="dish-1"
-                />
+                <img src="/src/images/favorites/Pasta_m@1x.png" alt="dish-1" />
               </a>
             </li>
           </div>
           <div class="dish-border">
             <li class="dish-list__item">
               <a href="#">
+                <img src="/src/images/favorites/pizza_m@1x.png" alt="dish-1" />
+              </a>
+            </li>
+          </div>
+          <!-- ? скрытые в мобильной версии блюда -->
+
+          <div class="dish-border mob-hidden">
+            <li class="dish-list__item">
+              <a href="#">
                 <img
-                  src="/src/images/favorites/pizza_m@1x.png"
+                  src="/src/images/favorites/chicken_lg@1x.png"
                   alt="dish-1"
                 />
               </a>
             </li>
           </div>
-          <!-- ? скрытые в мобильной версии блюда -->
-          <li class="dish-list__item mob-hidden">
-            <a href="#">
-              <img src="/src/images/favorites/chicken_m@1x.png" alt="dish-4" />
-            </a>
-          </li>
-          <li class="dish-list__item mob-hidden">
-            <a href="#">
-              <img src="/src/images/favorites/salat_m@1x.png" alt="dish-5" />
-            </a>
-          </li>
-          <li class="dish-list__item mob-hidden">
-            <a href="#">
-              <img src="/src/images/favorites/borshch_m@1x.png" alt="dish-6" />
-            </a>
-          </li>
+          <div class="dish-border mob-hidden">
+            <li class="dish-list__item">
+              <a href="#">
+                <img src="/src/images/favorites/salat_lg@1x.png" alt="dish-1" />
+              </a>
+            </li>
+          </div>
+          <div class="dish-border mob-hidden">
+            <li class="dish-list__item">
+              <a href="#">
+                <img
+                  src="/src/images/favorites/borshch_lg@1x.png"
+                  alt="dish-1"
+                />
+              </a>
+            </li>
+          </div>
         </ul>
       </div>
     </section>
