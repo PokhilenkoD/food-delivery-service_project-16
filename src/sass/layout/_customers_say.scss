@@ -1,0 +1,240 @@
+// mobile
+.customers-container {
+  min-width: 320px;
+  // max-width: 767px;
+  height: 769px;
+
+  background-image: url(/src/images/customers_say/bg_customers_mob.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.customers__textContainer {
+  margin-left: 20px;
+  padding-top: 60px;
+  margin-bottom: 32px;
+}
+.customers__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+
+  color: var(--main-txt-color);
+}
+.customers__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: calc(16 / 14);
+
+  color: var(--main-txt-color);
+}
+
+.commentators-section {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.commentBox {
+  border-radius: 0px 30px 30px 30px;
+
+  background-color: var(--main-bg-color);
+
+  &:first-child {
+    margin-bottom: 24px;
+  }
+}
+
+.comment__rating {
+  padding-left: 8px;
+  padding-top: 8px;
+
+  margin-bottom: 28px;
+}
+.comment__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  // max-width: 264px;
+
+  
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 40px;
+
+  color: var(--main-txt-color);
+}
+
+.commentator {
+  display: flex;
+  max-width: 160px;
+
+  margin-left: 8px;
+  padding-bottom: 8px;
+}
+.commentator-NameandAbout {
+  width: 94px;
+
+  margin-left: 16px;
+
+  border-right: 0.854167px solid #7eb101;
+}
+.commentator__name {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+
+  color: var(--main-txt-color);
+}
+.commentator__about {
+  line-height: 150%;
+  /* identical to box height, or 21px */
+
+  /* Black */
+
+  color: #2c2c2c;
+}
+
+// tablet
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .customers-container {
+    height: 544px;
+    min-width: 768px;
+    // max-width: 1279px;
+
+    background-image: url(/src/images/customers_say/bg_customers_tab.svg);
+    background-repeat: no-repeat;
+  }
+  .customers__title {
+    font-size: 42px;
+  }
+  .commentators-section {
+    display: flex;
+    gap: 31px;
+  }
+  .commentBox {
+    width: 336px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+  .comment__text {
+    max-width: 312px;
+    height: 84px;
+
+    font-size: 18px;
+  }
+}
+@media (min-width: 1280px) {
+  .customers-container {
+    background-image: url(/src/images/customers_say/bg_customers_desk.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    min-width: 1280px;
+    height: 647px;
+  }
+
+  .customers__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49 / 42);
+
+    color: #2c2c2c;
+  }
+  .customers__subtitle {
+    font-size: 16px;
+  }
+  .ml {
+    margin-left: 16px;
+  }
+
+  .customers__subtitle {
+    margin-bottom: 32px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+
+    color: #2c2c2c;
+  }
+
+  // commentators
+
+  .commentators-section {
+    display: flex;
+  }
+
+  .commentBox {
+    margin-left: 16px;
+    margin-right: 139px;
+
+    max-width: 501px;
+    height: 227px;
+
+    border-radius: 0px 30px 30px 30px;
+
+    background-color: var(--main-bg-color);
+  }
+
+  .svg-flex-container {
+    display: flex;
+
+    max-width: 100px;
+    height: 16px;
+
+    margin-bottom: 34px;
+  }
+  .comment__rating {
+    width: 100px;
+    height: 20px;
+    // изначально 16, но 16 не работает
+
+    margin-left: 14px;
+    margin-top: 14px;
+    margin-bottom: 28px;
+
+    // outline: 1px solid red;
+  }
+  .comment__text {
+    max-width: 473px;
+
+    margin-left: 14px;
+    margin-bottom: 40px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(21 / 18);
+
+    /* Black */
+
+    color: #2c2c2c;
+  }
+
+  .commentator {
+    display: flex;
+
+    margin-left: 14px;
+
+    max-width: 160px;
+  }
+  .commentator-NameandAbout {
+    margin-left: 16px;
+  }
+  .commentator__name {
+    line-height: 150%;
+
+    color: #2c2c2c;
+  }
+  .commentator__about {
+    font-weight: 400;
+    line-height: 150%;
+
+    color: #2c2c2c;
+  }
+}
