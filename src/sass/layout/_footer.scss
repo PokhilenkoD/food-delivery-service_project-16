@@ -9,12 +9,12 @@
     url(../images/footer/apple_left_s@1x.png),
     url(../images/footer/spray_left_down_s@1x.png),
     url(../images/footer/apple_down_s@1x.png),
-    url(../images/footer/banan_s@1x.png),
-    url(../images/footer/spray_right_down_s@1x.png);
+    url(../images/footer/spray_right_down_s@1x.png),
+    url(../images/footer/banan_s@1x.png);
   background-repeat: no-repeat;
-  background-position: top right, top 25px right, top 136px left, top 110px left,
-    bottom left 43px, bottom left 72px, bottom right 89px, bottom right 24px;
-  background-size: none;
+  background-position: top right, top 25px right, top 137px left, top 131px left,
+    bottom left 43px, bottom left 82px, bottom right 24px, bottom right 89px;
+  background-size: auto, auto, auto, auto, auto, auto, auto, auto;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -24,8 +24,8 @@
       url(../images/footer/apple_left_s@2x.png),
       url(../images/footer/spray_left_down_s@2x.png),
       url(../images/footer/apple_down_s@2x.png),
-      url(../images/footer/banan_s@2x.png),
-      url(../images/footer/spray_right_down_s@1x.png);
+      url(../images/footer/spray_right_down_s@1x.png),
+      url(../images/footer/banan_s@2x.png);
   }
 
   @media screen and (min-width: 768px) {
@@ -42,7 +42,7 @@
     background-position: bottom left 126px, bottom left 207px, bottom right,
       bottom right 233px, bottom left -20px, bottom right 94px, top right,
       top 35px right;
-
+   
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -64,12 +64,12 @@
       url(../images/footer/spray_left_lg@1x.png),
       url(../images/footer/apple_left_lg@1x.png),
       url(../images/footer/apple_right_lg@1x.png),
+      url(../images/footer/spray_right_lg@1x.png),
       url(../images/footer/banan_lg@1x.png),
-      url(../images/footer/orange_half_lg@1x.png),
-      url(../images/footer/spray_right_lg@1x.png);
+      url(../images/footer/orange_half_lg@1x.png);
     background-position: bottom left 340px, bottom right 450px,
-      bottom left 216px, bottom left 300px, bottom right, bottom right 266px,
-      bottom left 53px, bottom right 134px;
+      bottom left 216px, bottom left 300px, bottom right, bottom right 134px,
+      bottom right 266px, bottom left 53px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -79,9 +79,9 @@
         url(../images/footer/spray_left_lg@2x.png),
         url(../images/footer/apple_left_lg@2x.png),
         url(../images/footer/apple_right_lg@2x.png),
+        url(../images/footer/spray_right_lg@2x.png),
         url(../images/footer/banan_lg@2x.png),
-        url(../images/footer/orange_half_lg@2x.png),
-        url(../images/footer/spray_right_lg@2x.png);
+        url(../images/footer/orange_half_lg@2x.png);
     }
   }
 }
