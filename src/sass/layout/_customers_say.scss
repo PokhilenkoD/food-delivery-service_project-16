@@ -1,12 +1,13 @@
 // mobile
 .customers-container {
-  min-width: 320px;
+  // min-width: 320px;
   // max-width: 767px;
+  width: 320px;
   height: 769px;
 
   background-image: url(/src/images/customers_say/bg_customers_mob.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  // background-size: cover;
 }
 .customers__textContainer {
   margin-left: 20px;
@@ -99,9 +100,12 @@
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .customers-container {
-    height: 544px;
+    height: auto;
+    // ! Изначально height=544px, но обрезается bgimage
     min-width: 768px;
     // max-width: 1279px;
+    padding-bottom: 145px;
+    
 
     background-image: url(/src/images/customers_say/bg_customers_tab.svg);
     background-repeat: no-repeat;

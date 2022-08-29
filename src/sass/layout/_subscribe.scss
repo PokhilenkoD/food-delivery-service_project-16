@@ -1,4 +1,5 @@
 .subscribe {
+  margin-top: -66px;
 }
 
 .subscribe__content {
@@ -11,7 +12,7 @@
 }
 
 .subscribe__paragraph {
-  width: 280px;
+  max-width: 100%;
 
   @media screen and (min-width: 1280px) {
     width: 639px;
@@ -24,11 +25,16 @@
 
   margin-top: 17px;
   margin-bottom: 20px;
-  width: 280px;
+  max-width: 100%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: calc(50 / 42);
+
+    margin-top: 20px;
+  }
 
   @media screen and (min-width: 1280px) {
-    font-size: 42px;
-
     padding-top: 46px;
     width: 100%;
   }
@@ -37,25 +43,31 @@
   font-size: 14px;
   line-height: calc(16 / 14);
   margin-bottom: 40px;
-  width: 260px;
+  max-width: 100%;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: calc(24 / 16);
+  }
 
+  @media screen and (min-width: 1280px) {
     margin-bottom: 24px;
     width: 100%;
   }
 }
 .subscribe__form-box {
+  width: 100%;
 }
 
 .subscribe__form {
-  position: relative;
+  max-width: 100%;
+  @media screen and (min-width:768px){
+    position: relative;
+  }
 }
 
 .subscribe__input {
-  width: 278px;
+  width: 100%;
   padding-top: 12px;
   padding-right: 57px;
   padding-bottom: 12px;
@@ -66,9 +78,9 @@
   border: 0.854167px solid #ffe550;
   outline: transparent;
 
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 0;
+  @media screen and (min-width: 768px) {
     width: 394px;
+    margin-bottom: 0;
   }
 
   &:hover,
@@ -112,6 +124,11 @@
     background-color: #b5ff00;
   }
 
+  @media screen and (min-width: 768px) {
+    display: inline;
+    margin-left: 22px;
+  }
+
   @media screen and (min-width: 1280px) {
     display: inline-block;
     margin-left: 32px;
@@ -119,21 +136,18 @@
 }
 
 .subscribe__image-box {
-  width: 280px;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: end;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
 }
 
-.subscribe__image {
-  //   margin: 0 auto;
-  //   height: 78px;
 
-  //   @media screen and (min-width: 768px) {
-  //     height: 136px;
-  //   }
-
-  //   @media screen and (min-width: 1280px) {
-  //     height: 266px;
-  //   }
-}
 
 .subscribe__error {
   position: absolute;
