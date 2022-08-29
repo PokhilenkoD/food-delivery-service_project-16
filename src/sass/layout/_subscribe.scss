@@ -1,5 +1,13 @@
 .subscribe {
-  margin-top: -66px;
+  margin-top: -43px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: -75px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: -66px;
+  }
 }
 
 .subscribe__content {
@@ -61,7 +69,7 @@
 
 .subscribe__form {
   max-width: 100%;
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     position: relative;
   }
 }
@@ -146,8 +154,6 @@
     display: block;
   }
 }
-
-
 
 .subscribe__error {
   position: absolute;
