@@ -1,4 +1,5 @@
 .subscribe {
+  margin-top: -66px;
 }
 
 .subscribe__content {
@@ -59,8 +60,10 @@
 }
 
 .subscribe__form {
-  position: relative;
   max-width: 100%;
+  @media screen and (min-width:768px){
+    position: relative;
+  }
 }
 
 .subscribe__input {
@@ -144,8 +147,7 @@
   }
 }
 
-.subscribe__image {
-}
+
 
 .subscribe__error {
   position: absolute;
