@@ -1,5 +1,6 @@
 
 .offerings {
+
   padding-top: 41px;
   margin-left: auto;
   margin-right: auto;
@@ -17,12 +18,14 @@
 
   }
   @media screen and (min-width: 768px) {
+    margin-top: -130px;
     width: 768px;
     padding-top: 150px;
 
     background-image: url(/src/images/offerings/bg_offerings_tab.svg);
   }
   @media screen and (min-width: 1280px) {
+    margin-top: -163px;
     width: 1280px;
     padding-top: 177px;
     background-image: url(/src/images/offerings/bg_offerings_desk.svg);
@@ -100,7 +103,7 @@
     line-height: calc(49 / 42);
   }
   @media screen and (min-width: 1280px) {
-    line-height: calc(42 / 50);
+    line-height: calc(50 / 42);
   }
 }
 .offerings-txt {
