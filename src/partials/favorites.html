@@ -6,92 +6,66 @@
     </p>
     <!-- ! dish list -->
     <ul class="dish-list">
-      <div class="dish-border">
-        <li class="dish-list__item">
-          <a href="#">
-            <img src="/src/images/favorites/gamburger_m@1x.png" alt="dish-1" />
-
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/favorites/gamburger_lg@1x.png,
-                  ./images/favorites/gamburger_lg@1x.png
-                "
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  ./images/favorites/gamburger_m@1x.png,
-                  ./images/favorites/gamburger_m@2x.png
-                "
-              />
-              <source
-                media="(min-width: 320px)"
-                srcset="
-                  ./images/favorites/gamburger_s@1x.png,
-                  ./images/favorites/gamburger_s@2x.png
-                "
-              />
-
-              <img
-                class="subscribe__image"
-                alt="Banan"
-                src="./images/subscribe/banan_lg@1x.png"
-              />
-            </picture>
-            <!-- <img
+      <li class="dish-list__item">
+        <a href="#">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
               srcset="
-              ../src/images/favorites/gamburger_s@1x.png 223.29w,
-              ../src/images/favorites/gamburger_s@2x.png 223.29w 2x,
-              ../src/images/favorites/gamburger_m@1x.png 267.95w,
-              ../src/images/favorites/gamburger_m@2x.png 267.95w 2x,
-              ../src/images/favorites/gamburger_lg@1x.png 315w,
-              ../src/images/favorites/gamburger_lg@2x.png 315w 2x"
-              sizes="(min-width: 320px) 223.29px, (min-width: 768px) 267.95px, (min-width: 1280px) 315px"
-              src="/src/images/favorites/gamburger_m@1x.png"
-              alt="gamburger"
-            /> -->
-          </a>
-        </li>
-      </div>
-      <div class="dish-border">
-        <li class="dish-list__item">
-          <a href="#">
-            <img src="/src/images/favorites/Pasta_m@1x.png" alt="dish-1" />
-          </a>
-        </li>
-      </div>
-      <div class="dish-border">
-        <li class="dish-list__item">
-          <a href="#">
-            <img src="/src/images/favorites/pizza_m@1x.png" alt="dish-1" />
-          </a>
-        </li>
-      </div>
+                ./images/favorites/gamburger_lg@1x.png,
+                ./images/favorites/gamburger_lg@1x.png
+              "
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1279px)"
+              srcset="
+                ./images/favorites/gamburger_m@1x.png,
+                ./images/favorites/gamburger_m@2x.png
+              "
+            />
+            <source
+              media="(min-width: 320px) and (max-width: 767px)"
+              srcset="
+                ./images/favorites/gamburger_s@1x.png,
+                ./images/favorites/gamburger_s@2x.png
+              "
+            />
+            <img
+              class="subscribe__image"
+              alt="Banan"
+              src="./images/favorites/gamburger_m@1x.png"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="dish-list__item">
+        <a href="#">
+          <img src="/src/images/favorites/Pasta_m@1x.png" alt="dish-1" />
+        </a>
+      </li>
+      <li class="dish-list__item">
+        <a href="#">
+          <img src="/src/images/favorites/pizza_m@1x.png" alt="dish-1" />
+        </a>
+      </li>
+      
       <!-- ? скрытые в мобильной версии блюда -->
 
-      <div class="dish-border mob-hidden">
-        <li class="dish-list__item">
-          <a href="#">
-            <img src="/src/images/favorites/chicken_lg@1x.png" alt="dish-1" />
-          </a>
-        </li>
-      </div>
-      <div class="dish-border mob-hidden">
-        <li class="dish-list__item">
-          <a href="#">
-            <img src="/src/images/favorites/salat_lg@1x.png" alt="dish-1" />
-          </a>
-        </li>
-      </div>
-      <div class="dish-border mob-hidden">
-        <li class="dish-list__item">
-          <a href="#">
-            <img src="/src/images/favorites/borshch_lg@1x.png" alt="dish-1" />
-          </a>
-        </li>
-      </div>
+      <li class="dish-list__item mob-hidden">
+        <a href="#">
+          <img src="/src/images/favorites/chicken_lg@1x.png" alt="dish-1" />
+        </a>
+      </li>
+      <li class="dish-list__item mob-hidden">
+        <a href="#">
+          <img src="/src/images/favorites/salat_lg@1x.png" alt="dish-1" />
+        </a>
+      </li>
+      <li class="dish-list__item mob-hidden">
+        <a href="#">
+          <img src="/src/images/favorites/borshch_lg@1x.png" alt="dish-1" />
+        </a>
+      </li>
     </ul>
   </div>
 </section>
