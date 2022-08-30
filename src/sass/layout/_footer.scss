@@ -171,6 +171,8 @@
     line-height: calc(16 / 14);
     color: #000000;
 
+    position: relative;
+
     transition: color var(--animations);
   }
 
@@ -179,16 +181,23 @@
   &__link:hover::after,
   &__link:focus::after {
     color: var(--accent-bg-color);
-    opacity: 1;
 
     @media screen and (max-width: 767px) {
       color: #000000;
-      color: var(--accent-bg-color);
+      background-color: var(--accent-bg-color);
+    }
+
+    @media screen and (min-width: 768px) {
+      opacity: 1;
     }
   }
 
   &__link::after {
     @media screen and (min-width: 768px) {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
       opacity: 0;
       position: absolute;
       content: '';
@@ -198,7 +207,6 @@
       width: 100%;
       height: 1px;
       border-radius: 2px;
-  
     }
   }
 }
@@ -211,7 +219,7 @@
   flex-direction: column;
 }
 
-.footer__title {
+.footer-form__title {
   display: block;
   text-align: left;
 
