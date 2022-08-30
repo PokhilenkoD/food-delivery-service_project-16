@@ -6,6 +6,7 @@
     </p>
     <!-- ! dish list -->
     <ul class="dish-list">
+      <!-- ? first pic -->
       <li class="dish-list__item">
         <a href="#">
           <picture>
@@ -32,7 +33,7 @@
             />
             <img
               class="subscribe__image"
-              alt="Banan"
+              alt="gamburger"
               src="./images/favorites/gamburger_m@1x.png"
             />
           </picture>
@@ -40,31 +41,162 @@
       </li>
       <li class="dish-list__item">
         <a href="#">
-          <img src="/src/images/favorites/Pasta_m@1x.png" alt="dish-1" />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/pasta_lg@1x.png,
+                ./images/favorites/pasta_lg@1x.png
+              "
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1279px)"
+              srcset="
+                ./images/favorites/pasta_m@1x.png,
+                ./images/favorites/pasta_m@2x.png
+              "
+            />
+            <source
+              media="(min-width: 320px) and (max-width: 767px)"
+              srcset="
+                ./images/favorites/pasta_s@1x.png,
+                ./images/favorites/pasta_s@2x.png
+              "
+            />
+            <img
+              class="subscribe__image"
+              alt="pasta"
+              src="./images/favorites/pasta_m@1x.png"
+            />
+          </picture>
         </a>
       </li>
       <li class="dish-list__item">
         <a href="#">
-          <img src="/src/images/favorites/pizza_m@1x.png" alt="dish-1" />
-        </a>
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/pizza_lg@1x.png,
+                ./images/favorites/pizza_lg@1x.png
+              "
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1279px)"
+              srcset="
+                ./images/favorites/pizza_m@1x.png,
+                ./images/favorites/pizza_m@2x.png
+              "
+            />
+            <source
+              media="(min-width: 320px) and (max-width: 767px)"
+              srcset="
+                ./images/favorites/pizza_s@1x.png,
+                ./images/favorites/pizza_s@2x.png
+              "
+            />
+            <img
+              class="subscribe__image"
+              alt="pizza"
+              src="./images/favorites/pizza_m@1x.png"
+            />
+          </picture>        </a>
       </li>
-      
+
       <!-- ? скрытые в мобильной версии блюда -->
 
       <li class="dish-list__item mob-hidden">
         <a href="#">
-          <img src="/src/images/favorites/chicken_lg@1x.png" alt="dish-1" />
-        </a>
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/chicken_lg@1x.png,
+                ./images/favorites/chicken_lg@1x.png
+              "
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1279px)"
+              srcset="
+                ./images/favorites/chicken_m@1x.png,
+                ./images/favorites/chicken_m@2x.png
+              "
+            />
+            <source
+              media="(min-width: 320px) and (max-width: 767px)"
+              srcset="
+                ./images/favorites/chicken_s@1x.png,
+                ./images/favorites/chicken_s@2x.png
+              "
+            />
+            <img
+              class="subscribe__image"
+              alt="chicken"
+              src="./images/favorites/chicken_m@1x.png"
+            />
+          </picture>        </a>
       </li>
       <li class="dish-list__item mob-hidden">
         <a href="#">
-          <img src="/src/images/favorites/salat_lg@1x.png" alt="dish-1" />
-        </a>
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/salat@1x.png,
+                ./images/favorites/salat@1x.png
+              "
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1279px)"
+              srcset="
+                ./images/favorites/salat_m@1x.png,
+                ./images/favorites/salat_m@2x.png
+              "
+            />
+            <source
+              media="(min-width: 320px) and (max-width: 767px)"
+              srcset="
+                ./images/favorites/salat_s@1x.png,
+                ./images/favorites/salat_s@2x.png
+              "
+            />
+            <img
+              class="subscribe__image"
+              alt="salat"
+              src="./images/favorites/salat_m@1x.png"
+            />
+          </picture>        </a>
       </li>
       <li class="dish-list__item mob-hidden">
         <a href="#">
-          <img src="/src/images/favorites/borshch_lg@1x.png" alt="dish-1" />
-        </a>
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/borshch_lg@1x.png,
+                ./images/favorites/borshch_lg@1x.png
+              "
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1279px)"
+              srcset="
+                ./images/favorites/borshch_m@1x.png,
+                ./images/favorites/borshch_m@2x.png
+              "
+            />
+            <source
+              media="(min-width: 320px) and (max-width: 767px)"
+              srcset="
+                ./images/favorites/borshch_s@1x.png,
+                ./images/favorites/borshch_s@2x.png
+              "
+            />
+            <img
+              class="subscribe__image"
+              alt="Banan"
+              src="./images/favorites/borshch_m@1x.png"
+            />
+          </picture>        </a>
       </li>
     </ul>
   </div>
