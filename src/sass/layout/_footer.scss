@@ -12,15 +12,15 @@
     url(../images/footer/spray_right_down_s@1x.png),
     url(../images/footer/banan_s@1x.png);
   background-repeat: no-repeat;
-  background-position: top right, top 25px right, top 137px left, top 131px left,
+  background-position: top right, top 25px right, top 147px left 1px, top 111px left,
     bottom left 43px, bottom left 82px, bottom right 24px, bottom right 89px;
-  background-size: auto, auto, auto, auto, auto, auto, auto, auto;
+  background-size: 104px 259px, 60px 205px, 100px 55px, 60px 115px, 79px 42px, 91px 72px, 80px 66px, 105px 38px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/footer/spray_right_s@2x.png),
       url(../images/footer/orange_s@2x.png),
-      url(../images/footer/spray_left_m@2x.png),
+      url(../images/footer/spray_left_s@2x.png),
       url(../images/footer/apple_left_s@2x.png),
       url(../images/footer/spray_left_down_s@2x.png),
       url(../images/footer/apple_down_s@2x.png),
@@ -42,6 +42,7 @@
     background-position: bottom left 126px, bottom left 207px, bottom right,
       bottom right 233px, bottom left -20px, bottom right 94px, top right,
       top 35px right;
+    background-size: 168px 92px, 194px 153px, 170px 69px, 221px 82px, 184px 101px, 171px 141px, 203px 365px, 96px 289px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -70,6 +71,8 @@
     background-position: bottom left 340px, bottom right 450px,
       bottom left 216px, bottom left 300px, bottom right, bottom right 134px,
       bottom right 266px, bottom left 53px;
+    background-size: 526px 266px, 380px 126px, 178px 98px, 206px 163px,
+      181px 73px, 182px 154px, 235px 87px, 200px 107px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
