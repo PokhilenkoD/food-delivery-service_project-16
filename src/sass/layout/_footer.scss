@@ -12,9 +12,11 @@
     url(../images/footer/spray_right_down_s@1x.png),
     url(../images/footer/banan_s@1x.png);
   background-repeat: no-repeat;
-  background-position: top right, top 25px right, top 137px left 1px, top 121px left,
-    bottom left 43px, bottom left 78px, bottom right 24px, bottom right 89px;
-  background-size: 104px 259px, 66px 205px, 100px 60px, 60px 110px, 79px 42px, 84px 55px, 80px 66px, 105px 38px;
+  background-position: top right, top 25px right, top 137px left 1px,
+    top 121px left, bottom left 43px, bottom left 78px, bottom right 24px,
+    bottom right 89px;
+  background-size: 104px 259px, 66px 205px, 100px 60px, 60px 110px, 79px 42px,
+    84px 55px, 80px 66px, 105px 38px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -42,7 +44,8 @@
     background-position: bottom left 126px, bottom left 210px, bottom right,
       bottom right 233px, bottom left -17px, bottom right 94px, top right,
       top 35px right;
-    background-size: 168px 92px, 173px 105px, 155px 65px, 221px 82px, 184px 61px, 171px 141px, 203px 365px, 96px 289px;
+    background-size: 168px 92px, 173px 105px, 155px 65px, 221px 82px, 184px 61px,
+      171px 141px, 203px 365px, 96px 289px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -167,6 +170,44 @@
     font-size: 14px;
     line-height: calc(16 / 14);
     color: #000000;
+
+    position: relative;
+
+    transition: color var(--animations);
+  }
+
+  &__link:hover,
+  &__link:focus,
+  &__link:hover::after,
+  &__link:focus::after {
+    color: var(--accent-bg-color);
+
+    @media screen and (max-width: 767px) {
+      color: #000000;
+      background-color: var(--accent-bg-color);
+    }
+
+    @media screen and (min-width: 768px) {
+      opacity: 1;
+    }
+  }
+
+  &__link::after {
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      opacity: 0;
+      position: absolute;
+      content: '';
+      bottom: 0;
+      display: block;
+      background-color: var(--accent-bg-color);
+      width: 100%;
+      height: 1px;
+      border-radius: 2px;
+    }
   }
 }
 
@@ -178,7 +219,7 @@
   flex-direction: column;
 }
 
-.footer__title {
+.footer-form__title {
   display: block;
   text-align: left;
 
