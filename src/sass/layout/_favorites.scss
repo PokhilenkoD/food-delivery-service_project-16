@@ -6,13 +6,6 @@ li {
     margin-bottom: 100px;
   }
 }
-.mob-hidden {
-  display: none;
-
-  @media (min-width: 768px) {
-    display: flex;
-  }
-}
 
 // - - - - - - - - - -
 
@@ -112,6 +105,14 @@ li {
       border: 16px solid var(--accent-bg-color-hover);
       border-radius: 197.5px;
     }
+  }
+}
+
+.mob-hidden {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
   }
 }
 
