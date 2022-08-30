@@ -50,6 +50,7 @@
 
 
 .header__link{
+  position: relative;
   font-size: 14px;
   line-height: 1.14;
   color:var(--main-txt-color);
@@ -66,17 +67,34 @@
   }
 }
 
-a:active,
+
+.header__link:active,
 .header__link:hover,
-.header__link:focus{
+.header__link:focus,
+.header__link:hover::after,
+.header__link:focus::after{
   color: var(--accent-bg-color);
-  text-decoration: underline var(--accent-bg-color);
+  opacity: 1;
 
   @media screen and (max-width: 767px){
     color: #000000;
     text-decoration: none;
     background-color: var(--accent-bg-color);
   }
+}
+
+.header__link::after{
+  opacity: 0;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  display: block;
+  background-color: var(--accent-bg-color);
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  transform: scaleX(1);
+  transition: background-color var(--animations);
 }
 
 .header__btn{
