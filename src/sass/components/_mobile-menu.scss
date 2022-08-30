@@ -1,6 +1,9 @@
+.mobile--block{
+  position: relative;
+}
 .menu__container{
-  position: fixed;
-  top: 50px;
+  position: absolute;
+  top: -24px;
   right: 20px;
   overflow-y: scroll;
   z-index: 99;
