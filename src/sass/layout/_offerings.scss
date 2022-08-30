@@ -1,0 +1,213 @@
+
+.offerings {
+
+  padding-top: 41px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/src/images/offerings/bg_offerings_mob.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: -130px;
+    width: 768px;
+    padding-top: 150px;
+
+    background-image: url(/src/images/offerings/bg_offerings_tab.svg);
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: -163px;
+    width: 1280px;
+    padding-top: 177px;
+    background-image: url(/src/images/offerings/bg_offerings_desk.svg);
+  }
+}
+.offerings-container {
+
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        gap: 90px;
+    }
+}
+.offerings-img-container {
+    @media screen and (min-width: 1280px) {
+    max-width: 550px;
+    padding-bottom: 75px;
+    }
+}
+.offerings-img {
+  width: 280px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 280px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 704px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 550px;
+  }
+}
+.offerings-left {
+  @media screen and (min-width: 1280px) {
+    width: 573px;
+    margin-right: 51px;
+  }
+  
+}
+.offerings-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 116px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    gap: 67px;
+  }
+}
+.offerings-svg {
+  width: 48px;
+  height: 48px;
+  background-color: #ffff;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 10px;
+  }
+}
+.offerings-title {
+  padding-top: 60px;
+  padding-bottom: 28px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(32 / 28);
+  color: #2c2c2c;
+  @media screen and (min-width: 768px) {
+    width: 526px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49 / 42);
+  }
+  @media screen and (min-width: 1280px) {
+    line-height: calc(50 / 42);
+  }
+}
+.offerings-txt {
+  justify-content: center;
+  padding-bottom: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+
+  color: #2c2c2c;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 40px;
+    width: 500px;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+}
+.offerings-item {
+  padding-bottom: 28px;
+  @media screen and (min-width: 768px) {
+    width: 252px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 32px;
+  }
+}
+.offerings-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 17px;
+    line-height: calc(24 / 17);
+  }
+}
+.offerings-item-txt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+
+  @media screen and (min-width: 1280px) {
+    line-height: calc(21 / 14);
+  }
+}
+.btn-flex {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+}
+.offerings-button {
+  padding: 10px 22px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 13px;
+  line-height: calc(20 / 13);
+  color: #2c2c2c;
+  display: block;
+  cursor: pointer;
+  background: #ffffff;
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+}
+.offerings-button:hover,
+.offerings-button:focus {
+  border: 2px solid #597d00;
+}
+.read-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6.83333px 0px;
+  gap: 3.42px;
+  font-weight: 500;
+  font-size: 13.6667px;
+  line-height: 150%;
+  color: #000000;
+  text-decoration: none;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+}
+.offerings-arrow {
+  flex: none;
+  flex-grow: 0;
+  order: 1;
+  width: 6px;
+  height: 10px;
+}
+.list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
