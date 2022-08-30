@@ -147,6 +147,21 @@
 
   @media screen and (min-width: 768px) {
     color: var(--accent-bg-color);
-    text-decoration: underline 1px var(--accent-bg-color);
   }
+}
+
+.current::after{
+  @media screen and (min-width: 768px){
+    opacity: 1;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    display: block;
+    background-color: var(--accent-bg-color);
+    width: 100%;
+    height: 1px;
+    border-radius: 2px;
+    transform: scaleX(1);
+    transition: background-color var(--animations);
+}
 }
