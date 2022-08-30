@@ -74,12 +74,13 @@
 .header__link:hover::after,
 .header__link:focus::after{
   color: var(--accent-bg-color);
-  opacity: 1;
 
   @media screen and (max-width: 767px){
     color: #000000;
-    text-decoration: none;
     background-color: var(--accent-bg-color);
+  }
+  @media screen and (min-width: 768px) {
+    opacity: 1;
   }
 }
 
@@ -146,6 +147,6 @@
 
   @media screen and (min-width: 768px) {
     color: var(--accent-bg-color);
-    text-decoration: underline var(--accent-bg-color)
+    text-decoration: underline 1px var(--accent-bg-color);
   }
 }
