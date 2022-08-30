@@ -20,6 +20,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 60px;
 }
 
 .favorites__title {
@@ -130,7 +131,6 @@ li {
 
     gap: 32px;
   }
-
 }
 .dish-list__item {
   // border: 11px solid #ffe550;
