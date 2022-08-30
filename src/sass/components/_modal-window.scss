@@ -19,7 +19,7 @@
 }
 // - - - - - - - - - - - - - - - - - - - - - -
 
-.modal {
+.modal-main {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -153,11 +153,15 @@
 
   background-color: white;
 
+  transition: var(--animations);
+
   &:hover,
   &:focus {
-    color: var(--common-border-col);
+    background-color: var(--common-border-col);
+    fill: white;
   }
 }
+
 .modal_closeBtnIcon {
   width: 18px;
   height: 18px;
