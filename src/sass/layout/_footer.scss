@@ -186,7 +186,6 @@
       color: #000000;
       background-color: var(--accent-bg-color);
       border-radius: 4px;
-      
     }
 
     @media screen and (min-width: 768px) {
@@ -266,7 +265,7 @@
   color: var(--main-txt-color);
   background-color: transparent;
 
-  transition: background-color var(--animations);
+  transition: border-color var(--animations);
 
   &:hover,
   &:focus {
@@ -308,6 +307,8 @@
   line-height: calc(15 / 10);
   color: #ff705d;
   opacity: 0;
+
+  transition: opacity var(--animations);
 }
 
 .footer-form__error-icon {
