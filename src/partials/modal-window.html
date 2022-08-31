@@ -1,56 +1,74 @@
-   <div class="backdrop is-hidden" data-main-modal>
-    <div class="modal-main">
-      <p class="modal__title">Order form</p>
-      <form class="modal__form">
-        <!-- ? name -->
-        <label class="modal-label">
-          <span class="modal-label__text">Name</span>
-          <input
-            type="text"
-            class="modal-label__input"
-            name="name"
-            placeholder="Your name"
-            minlength="3"
-            maxlength="25"
+<div class="backdrop is-hidden" data-main-modal>
+  <div class="modal-main">
+    <p class="modal__title">Order form</p>
+    <form class="modal__form">
+      <!-- ? name ? -->
+      <label class="modal-label">
+        <span class="modal-label__text">Name</span>
+        <input
+          type="text"
+          class="modal-label__input"
+          name="name"
+          placeholder="Your name"
+          minlength="3"
+          maxlength="25"
+        />
+        <!-- ! error text -->
+        <span class="modal-label__errorText">
+          <img
+            src="/src/images/icons/error.svg"
+            alt="error"
+            class="error-img"
           />
-          <!-- ! error text -->
-          <span class="modal-label__errorText">
-            <img src="/src/images/icons/error.svg" alt="error" class="error-img" />
-            The name must be between 3 and 25 characters
-          </span>
-        </label>
-        <!-- ? phone -->
-        <label class="modal-label">
-          <span class="modal-label__text">Phone number</span>
-          <input
-            type="text"
-            class="modal-label__input"
-            placeholder="+38(0__)___ __ __"
-            pattern="\d*"
-            maxlength="13"
+          The name must be between 3 and 25 characters
+        </span>
+      </label>
+      <!-- ? phone -->
+      <label class="modal-label">
+        <span class="modal-label__text">Phone number</span>
+        <input
+          type="text"
+          class="modal-label__input"
+          placeholder="+38(0__)___ __ __"
+          pattern="\d*"
+          maxlength="13"
+        />
+        <!-- ! error text -->
+        <span class="modal-label__errorText">
+          <img
+            src="/src/images/icons/error.svg"
+            alt="error"
+            class="error-img"
           />
-          <!-- ! error text -->
-          <span class="modal-label__errorText">
-            <img src="/src/images/icons/error.svg" alt="error" class="error-img" />
-            This phone must be in the format 099 000 00 00
-          </span>
-        </label>
-        <!-- ? email -->
-        <label class="modal-label">
-          <span class="modal-label__text">E-mail</span>
-          <input type="email" class="modal-label__input" placeholder="example@gmail.com" />
-          <!-- ! error text -->
-          <span class="modal-label__errorText">
-            <img src="/src/images/icons/error.svg" alt="error" class="error-img" />
-            Please enter a valid email address
-          </span>
-        </label>
-        <button type="submit" class="modal__submit">Send</button>
-      </form>
-      <button class="modal__closeBtn" data-modal-main-close>
-        <svg class="modal_closeBtnIcon">
-          <use href="/src/images/icons/spryte_delivery.svg#mobile_menu-close"></use>
-        </svg>
-      </button>
-    </div>
+          This phone must be in the format 099 000 00 00
+        </span>
+      </label>
+      <!-- ? email -->
+      <label class="modal-label">
+        <span class="modal-label__text">E-mail</span>
+        <input
+          type="email"
+          class="modal-label__input"
+          placeholder="example@gmail.com"
+        />
+        <!-- ! error text -->
+        <span class="modal-label__errorText">
+          <img
+            src="/src/images/icons/error.svg"
+            alt="error"
+            class="error-img"
+          />
+          Please enter a valid email address
+        </span>
+      </label>
+      <button type="submit" class="modal__submit">Send</button>
+    </form>
+    <button class="modal__closeBtn" data-modal-main-close>
+      <svg class="modal_closeBtnIcon">
+        <use
+          href="/src/images/icons/spryte_delivery.svg#mobile_menu-close"
+        ></use>
+      </svg>
+    </button>
   </div>
+</div>
