@@ -12,10 +12,18 @@
 
 .subscribe__content {
   display: flex;
-  padding-bottom: 36px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
 
   @media screen and (max-width: 1279px) {
     flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 64px;
   }
 }
 
