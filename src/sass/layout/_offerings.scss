@@ -1,6 +1,5 @@
 
 .offerings {
-
   padding-top: 41px;
   margin-left: auto;
   margin-right: auto;
@@ -8,14 +7,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-
   object-fit: cover;
   object-position: center;
   align-items: center;
   justify-content: center;
   @media screen and (min-width: 480px) {
     width: 480px;
-
   }
   @media screen and (min-width: 768px) {
     margin-top: -130px;
@@ -51,7 +48,7 @@
   margin: auto;
   justify-content: center;
   align-items: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     width: 280px;
   }
   @media screen and (min-width: 768px) {
@@ -140,8 +137,7 @@
   font-size: 18px;
   line-height: calc(21 / 18);
   margin-bottom: 16px;
-  @media screen and (min-width: 768px) {
-  }
+
   @media screen and (min-width: 1280px) {
     font-size: 17px;
     line-height: calc(24 / 17);
@@ -197,7 +193,6 @@
   @media screen and (min-width: 1280px) {
     display: none;
   }
-
 }
 .offerings-arrow {
   flex: none;

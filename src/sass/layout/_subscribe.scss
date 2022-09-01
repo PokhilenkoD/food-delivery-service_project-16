@@ -19,7 +19,7 @@
   }
 }
 
-.subscribe__paragraph {
+.subscribe__text-box {
   max-width: 100%;
 
   @media screen and (min-width: 1280px) {
@@ -83,8 +83,10 @@
   margin-bottom: 20px;
 
   border-radius: 30px;
-  border: 0.854167px solid #ffe550;
+  border: 0.854167px solid var(--main-border-color);
   outline: transparent;
+
+  transition: border-color var(--animations), opacity var(--animations);
 
   @media screen and (min-width: 768px) {
     width: 394px;
@@ -93,7 +95,7 @@
 
   &:hover,
   &:focus {
-    border-color: #7eb101;
+    border-color: var(--secondary-txt-color);
   }
 
   &::placeholder {
@@ -103,12 +105,28 @@
   }
 
   &:invalid {
-    border-color: red;
+    border-color: var(--error-color);
   }
 
   &:invalid + .subscribe__error {
     opacity: 1;
   }
+}
+
+.subscribe__error {
+  position: absolute;
+  top: 46px;
+  left: 2px;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 10px;
+  line-height: 150%;
+  color: var(--error-color);
+  opacity: 0;
+
+  transition: opacity var(--animations);
 }
 
 .subscribe__btn {
@@ -121,15 +139,17 @@
 
   color: #2c2c2c;
 
-  background-color: #bbf330;
+  background-color: var(--accent-bg-color);
   border-radius: 30px;
   border: none;
   padding: 11px 22px;
   margin-left: auto;
   display: block;
 
+  transition: background-color var(--animations);
+
   &:hover {
-    background-color: #b5ff00;
+    background-color: var(--accent-bg-color-hover);
   }
 
   @media screen and (min-width: 768px) {
@@ -153,19 +173,6 @@
   @media screen and (min-width: 1280px) {
     display: block;
   }
-}
-
-.subscribe__error {
-  position: absolute;
-  top: 46px;
-  left: 2px;
-  display: flex;
-  align-items: center;
-
-  font-size: 10px;
-  line-height: 150%;
-  color: #ff705d;
-  opacity: 0;
 }
 
 .subscribe__error-triangle {

@@ -7,41 +7,49 @@
       <nav class="header__nav">
         <ul class="header__list header list">
           <li class="header__item">
-            <a class="header__link current link" 
-               href="#hero">Home</a>
+            <a class="header__link current link" href="#hero">Home</a>
           </li>
           <li class="header__item">
-            <a class="header__link link" 
-               href="#offerings">About</a>
+            <a class="header__link link" href="#offerings">About</a>
           </li>
           <li class="header__item">
-            <a class="header__link link" 
-               href="#footer">Service</a>
+            <a class="header__link link" href="#footer">Service</a>
           </li>
           <li class="header__item">
-            <a class="header__link link" 
-               href="#favorites">Menu</a>
+            <a class="header__link link" href="#favorites">Menu</a>
           </li>
           <li class="header__item">
-            <a class="header__link link" 
-               href="#subscribe">Contact</a>
+            <a class="header__link link" href="#subscribe">Contact</a>
           </li>
         </ul>
       </nav>
-      <button class="header__btn" type="button">Order Now</button>
-      <button class="menu__btn js-open-modal" data-modal="1" type="button">
-      <svg class="mobile-menu__icon" width="28" height="28">
-        <use href="./images/icons/spryte_delivery.svg#mobile_menu"></use>
-      </svg>
-    </button>
+      <button class="header__btn" type="button" data-modal-main-open>
+        Order Now
+      </button>
+      <button
+        class="menu__btn js-open-modal"
+        data-modal="1"
+        type="button"
+        aria-label="button for open mobile menu"
+      >
+        <svg class="mobile-menu__icon" width="28" height="28">
+          <use href="./images/icons/spryte_delivery.svg#mobile_menu"></use>
+        </svg>
+      </button>
     </div>
   </div>
   <!--Mobile Menu-->
   <div class="mobile--block container">
     <div class="menu__container modal" data-modal="1" id="mobile-menu">
-      <button type="button" class="modal__btn js-modal-close">
+      <button
+        type="button"
+        class="modal__btn js-modal-close"
+        aria-label="button for close mobile menu"
+      >
         <svg width="24" height="24">
-          <use href="./images/icons/spryte_delivery.svg#mobile_menu-close"></use>
+          <use
+            href="./images/icons/spryte_delivery.svg#mobile_menu-close"
+          ></use>
         </svg>
       </button>
       <nav class="mobile__nav">
@@ -51,23 +59,20 @@
                href="#hero">Home</a>
           </li>
           <li class="header__item">
-            <a class="header__link link" 
-               href="#offerings">About</a>
+            <a class="header__link link" href="#offerings">About</a>
           </li>
           <li class="header__item">
-            <a class="header__link link" 
-               href="#footer">Service</a>
+            <a class="header__link link" href="#footer">Service</a>
           </li>
           <li class="header__item">
-            <a class="header__link link" 
-               href="#favorites">Menu</a>
+            <a class="header__link link" href="#favorites">Menu</a>
           </li>
           <li class="header__item">
             <a class="header__link contact link" href="#subscribe">Contact</a>
           </li>
         </ul>
       </nav>
-  </div>
+    </div>
   </div>
   <div class="overlay js-overlay-modal"></div>
 </header>
