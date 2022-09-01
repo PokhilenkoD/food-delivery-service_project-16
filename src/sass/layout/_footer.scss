@@ -159,12 +159,11 @@
     flex-direction: column;
 
     gap: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-
+   
     @media screen and (min-width: 768px) {
       flex-wrap: nowrap;
       flex-direction: row;
+      gap: 28px;
     }
   }
 
