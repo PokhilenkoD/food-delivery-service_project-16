@@ -1,7 +1,7 @@
-.mobile--block{
+.mobile--block {
   position: relative;
 }
-.menu__container{
+.menu__container {
   border-radius: 30px 0px 30px 30px;
   position: absolute;
   top: -24px;
@@ -12,46 +12,47 @@
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   width: 130px;
   pointer-events: none;
-  
+
+  transition: var(--animations);  
+
   margin-left: auto;
   align-items: center;
-  
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.menu__container.is-open{
+.menu__container.is-open {
   transform: translateX(0);
   pointer-events: initial;
   visibility: visible;
   opacity: 1;
 }
 
-.mobile__list{
-  @media screen and (max-width: 767px){
+.mobile__list {
+  @media screen and (max-width: 767px) {
     border-radius: 30px 0px 30px 30px;
-   
+
     background-color: var(--main-bg-color);
   }
 }
 
-.mobile-menu__icon{
+.mobile-menu__icon {
   background-color: var(--main-bg-color);
   border: none;
   &:active,
   &:hover,
-  &:focus{
+  &:focus {
     fill: var(--main-border-color);
   }
-  
+
   @media screen and (min-width: 768px) {
     display: none;
-  } 
+  }
 }
 
-.modal__btn{
+.modal__btn {
   position: absolute;
   top: 4px;
   right: 4px;
@@ -60,10 +61,9 @@
   background-color: inherit;
   fill: #000000;
   z-index: 9;
-  
 
   &:hover,
-  &:focus{
+  &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   }
 }
@@ -71,25 +71,25 @@
 .overlay {
   opacity: 0;
   visibility: hidden;
-  
+
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .0);
+  background-color: rgba(0, 0, 0, 0);
   z-index: 20;
-  transition: .3s all;
+  transition: 0.3s all;
 }
 
 .modal.active,
-.overlay.active{
+.overlay.active {
   transform: translateX(0);
   pointer-events: initial;
-   opacity: 1;
-   visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
-.mobile__nav{
+.mobile__nav {
   border-radius: 30px 0px 30px 30px;
 }
