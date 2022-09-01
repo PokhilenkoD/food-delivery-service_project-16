@@ -31,35 +31,24 @@
 
 .mobile__list{
   @media screen and (max-width: 767px){
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    border-radius: 30px 0px 30px 30px;
+   
     background-color: var(--main-bg-color);
   }
 }
 
-.header__item{
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 16px;
-
-  transition: background-color var(--animations);
-}
-
-@media screen and(max-width: 767px) {
-    .header__item:hover,
-    .header__item:focus{
-      background-color: var(--accent-bg-color);
-    }
-}
-
 .mobile-menu__icon{
-  fill: var(--secondary-txt-color);
   background-color: var(--main-bg-color);
   border: none;
+
+  &:hover,
+  &:focus{
+    fill: var(--main-border-color);
+  }
+  
   @media screen and (min-width: 768px) {
     display: none;
-  }
+  } 
 }
 
 .modal__btn{
@@ -70,6 +59,7 @@
   padding: 0;
   background-color: inherit;
   fill: #000000;
+  z-index: 9;
   
 
   &:hover,
