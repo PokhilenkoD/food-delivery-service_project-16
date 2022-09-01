@@ -40,7 +40,7 @@
 .mobile-menu__icon{
   background-color: var(--main-bg-color);
   border: none;
-
+  &:active,
   &:hover,
   &:focus{
     fill: var(--main-border-color);
