@@ -51,6 +51,8 @@
 
 .header__link{
   position: relative;
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   line-height: 1.14;
   color:var(--main-txt-color);
@@ -58,6 +60,10 @@
   transition: color var(--animations);
 
   @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    
     line-height: 1.19;
     color: #000000;
     
@@ -125,7 +131,7 @@
 
 .menu__btn{
   border: none;
-  color: var(--accent-bg-color);
+  fill: var(--accent-bg-color);
   background-color: inherit;
   padding: 0;
 
@@ -133,6 +139,11 @@
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+  
+  &:hover,
+  &:focus{
+    color: var(--main-border-color);
   }
 }
 
@@ -164,4 +175,8 @@
     transform: scaleX(1);
     transition: background-color var(--animations);
 }
+}
+
+.contact{
+  border-radius: 0px 0px 30px 30px;
 }
