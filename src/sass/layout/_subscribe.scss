@@ -96,7 +96,7 @@
   border: 0.854167px solid var(--main-border-color);
   outline: transparent;
 
-  animation: border_input 1s linear infinite;
+  animation: border_input 1s linear infinite alternate-reverse;
 
   transition: border-color var(--animations), opacity var(--animations);
 
