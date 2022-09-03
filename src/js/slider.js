@@ -18,4 +18,14 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+
+  // efects
+
+  effect: 'flip',
+
+  flipEffect: {
+    slideShadows: true,
+    limitRotation: true,
+    
+  },
 });

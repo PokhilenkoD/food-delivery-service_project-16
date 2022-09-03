@@ -101,20 +101,29 @@
   }
 }
 
-.swiper-one {
-  position: relative;
-  left: 380px;
-  bottom: 245;
+.swiper {
+  @media screen and (min-width: 768px) {
+    width: 320px;
+    height: 320px;
+
+    position: relative;
+    left: 380px;
+    bottom: 245;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   @media screen and (min-width: 1280px) {
+    width: 580px;
+    height: 580px;
     left: 650px;
     bottom: 430;
   }
 }
 
-.border-swiper {
+.swiper-slide {
   display: none;
-  width: 320px;
+  // width: 320px;
   height: 320px;
   border: 14px solid var(--main-border-color);
   border-radius: 50%;
@@ -132,86 +141,87 @@
   }
 }
 
-.scrole {
-  &__button {
-    border: none;
-    border-radius: 8px;
-    background: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+// .scrole {
+//   &__button {
+//     border: none;
+//     border-radius: 8px;
+//     background: #ffffff;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 
-    &:hover,
-    &:focus {
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-      fill: #7eb101;
-    }
-  }
+//     &:hover,
+//     &:focus {
+//       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+//       fill: #7eb101;
+//     }
+//   }
 
-  &__icon {
-    width: 12px;
-    height: 20px;
+//   &__icon {
+//     width: 12px;
+//     height: 20px;
 
-    @media screen and (min-width: 1280px) {
-      width: 17px;
-      height: 29px;
-    }
-  }
-}
+//     @media screen and (min-width: 1280px) {
+//       width: 17px;
+//       height: 29px;
+//     }
+//   }
+// }
 
-.left-btn {
-  display: none;
-  cursor: pointer;
+// .left-btn {
+//   display: none;
+//   cursor: pointer;
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    display: block;
-    position: relative;
-    left: 370px;
-    bottom: 420px;
-    width: 34px;
-    height: 28px;
-  }
-}
+//   @media screen and (min-width: 768px) and (max-width: 1279px) {
+//     display: block;
+//     position: relative;
+//     left: 370px;
+//     bottom: 420px;
+//     width: 34px;
+//     height: 28px;
+//   }
+// }
 
-.right-btn {
-  display: none;
-  cursor: pointer;
+// .right-btn {
+//   display: none;
+//   cursor: pointer;
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    display: block;
-    position: relative;
-    left: 675px;
-    bottom: 448px;
-    width: 34px;
-    height: 28px;
-  }
-}
+//   @media screen and (min-width: 768px) and (max-width: 1279px) {
+//     display: block;
+//     position: relative;
+//     left: 675px;
+//     bottom: 448px;
+//     width: 34px;
+//     height: 28px;
+//   }
+// }
 
-.left-button {
-  display: none;
-  cursor: pointer;
+// .left-button {
+//   display: none;
+//   cursor: pointer;
 
-  @media screen and (min-width: 1280px) {
-    display: block;
-    position: relative;
-    left: 635px;
-    bottom: 740px;
-    width: 48px;
-    height: 40px;
-  }
-}
+//   @media screen and (min-width: 1280px) {
+//     display: block;
+//     position: relative;
+//     left: 635px;
+//     bottom: 740px;
+//     width: 48px;
+//     height: 40px;
+//   }
+// }
 
-.right-button {
-  display: none;
-  cursor: pointer;
+// .right-button {
+//   display: none;
+//   cursor: pointer;
 
-  @media screen and (min-width: 1280px) {
-    display: block;
-    position: relative;
-    left: 1195px;
-    bottom: 780px;
-    width: 48px;
-    height: 40px;
-  }
-}
+//   @media screen and (min-width: 1280px) {
+//     display: block;
+//     position: relative;
+//     left: 1195px;
+//     bottom: 780px;
+//     width: 48px;
+//     height: 40px;
+//   }
+// }
+
 
 .border {
   border: 14px solid #ffe550;
