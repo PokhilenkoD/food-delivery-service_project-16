@@ -269,11 +269,14 @@
   color: var(--main-txt-color);
   background-color: transparent;
 
-  transition: border-color var(--animations);
+  animation: border_input 1s linear infinite alternate-reverse;
+
+  transition: border-color var(--animations), opacity var(--animations);
 
   &:hover,
   &:focus {
     border-color: var(--secondary-txt-color);
+    animation: none;
   }
 
   &::placeholder {
@@ -286,7 +289,7 @@
 
   &:invalid + .footer-form__error {
     opacity: 1;
-  }
+  }  
 
   @media screen and (min-width: 480px) {
     margin-right: 13px;
@@ -297,6 +300,20 @@
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 12px;
+  }
+}
+
+@keyframes border_input {
+  0% {
+    border-color: var(--main-border-color);
+  }
+
+  50% {
+    border-color: var(--accent-bg-color-hover);
+  }
+
+  100% {
+    border-color: var(--secondary-txt-color);
   }
 }
 
@@ -311,8 +328,23 @@
   line-height: calc(15 / 10);
   color: #ff705d;
   opacity: 0;
+  fill: red;
 
   transition: opacity var(--animations);
+  animation: error 1.5s linear infinite;
+}
+
+@keyframes error {
+  0% {
+    color: #fff;
+    fill: white;
+    transform: scalex(1);
+  }
+  100% {
+    color: red;
+    fill: red;
+    transform: scalex(1.1);
+  }
 }
 
 .footer-form__error-icon {
