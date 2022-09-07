@@ -25,6 +25,8 @@
   @media screen and (min-width: 1280px) {
     padding-bottom: 64px;
   }
+
+  position: relative;
 }
 
 .subscribe__text-box {
@@ -94,6 +96,8 @@
   border: 0.854167px solid var(--main-border-color);
   outline: transparent;
 
+  animation: border_input 1s linear infinite alternate-reverse;
+
   transition: border-color var(--animations), opacity var(--animations);
 
   @media screen and (min-width: 768px) {
@@ -104,6 +108,7 @@
   &:hover,
   &:focus {
     border-color: var(--secondary-txt-color);
+    animation: none;
   }
 
   &::placeholder {
@@ -121,6 +126,20 @@
   }
 }
 
+@keyframes border_input {
+  0% {
+    border-color: var(--main-border-color);
+  }
+
+  50% {
+    border-color: var(--accent-bg-color-hover);
+  }
+
+  100% {
+    border-color: var(--secondary-txt-color);
+  }
+}
+
 .subscribe__error {
   position: absolute;
   top: 46px;
@@ -133,56 +152,137 @@
   line-height: 150%;
   color: var(--error-color);
   opacity: 0;
+  fill: red;
 
   transition: opacity var(--animations);
+  animation: error 1.5s linear infinite;
+}
+
+@keyframes error {
+  0% {
+    color: #fff;
+    fill: white;
+    transform: scalex(1);
+  }
+  100% {
+    color: red;
+    fill: red;
+    transform: scalex(1.1);
+  }
+}
+
+.subscribe__error-triangle {
+  margin-right: 4px;
 }
 
 .subscribe__btn {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 150%;
-  cursor: pointer;
-
-  color: #2c2c2c;
-
-  background-color: var(--accent-bg-color);
-  border-radius: 30px;
-  border: none;
+  position: relative;
+  overflow: hidden;
+  display: block;
   padding: 11px 22px;
   margin-left: auto;
-  display: block;
-
-  transition: background-color var(--animations);
-
-  &:hover {
-    background-color: var(--accent-bg-color-hover);
-  }
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
-    display: inline;
+    display: inline-block;
     margin-left: 22px;
   }
 
   @media screen and (min-width: 1280px) {
-    display: inline-block;
     margin-left: 32px;
+  }
+
+  &:hover .subscribe__btn-animation {
+    top: -120px;
+    background-color: rgba(181, 255, 0, 1);
+  }
+}
+.subscribe__btn-txt {
+  position: relative;
+  z-index: 1;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: calc(20 / 13);
+  // letter-spacing: 5px;
+
+  color: #2c2c2c;
+}
+.subscribe__btn-animation {
+  display: block;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #bbf330;
+  box-shadow: inset 0 0 50px rgba(181, 255, 0, 1);
+  transition: 1.5s;
+
+  &::after,
+  &::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: rgb(255, 255, 255);
+  }
+
+  &::before {
+    border-radius: 45%;
+    background-color: rgb(255, 255, 255, 1);
+    animation: animate 5s linear infinite alternate;
+  }
+
+  &::after {
+    border-radius: 40%;
+    background: rgba(255, 255, 255, 0.5);
+    animation: animate 10s linear infinite alternate;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
   }
 }
 
 .subscribe__image-box {
   display: flex;
   justify-content: center;
+
   @media screen and (min-width: 768px) {
     justify-content: end;
   }
 
   @media screen and (min-width: 1280px) {
     display: block;
+    position: absolute;
+    top: -4px;
+    left: 657px;
   }
 }
 
-.subscribe__error-triangle {
-  margin-right: 4px;
+.subscribe__image:hover {
+  animation: rotate 1s linear 1 forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.3);
+  }
 }
