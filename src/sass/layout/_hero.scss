@@ -122,7 +122,7 @@
 }
 
 .swiper-wrapper {
-display: none;
+  display: none;
 
   @media screen and (min-width: 768px) {
     position: relative;
@@ -137,7 +137,7 @@ display: none;
 
 .swiper-slide {
   display: none;
-  // width: 320px;
+
   @media screen and (min-width: 768px) {
     display: block;
     height: 320px;
@@ -237,7 +237,6 @@ display: none;
 
 .swiper-button-prev,
 .swiper-button-next {
-  // display: none;
   @media screen and (min-width: 768px) {
     position: fixed;
     background-color: #fefefe;
@@ -260,7 +259,6 @@ display: none;
 
 .swiper-button-prev {
   @media screen and (min-width: 768px) {
-    // top: 146px;
     left: -8px;
     background-image: url(../images/icons/arrow-left.svg);
   }
