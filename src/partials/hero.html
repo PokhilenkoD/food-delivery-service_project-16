@@ -9,7 +9,60 @@
     <button class="hero__button" type="button" data-modal-main-opensec>
       Order Now
     </button>
-    <div class="swiper-one border-swiper">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide border-swiper"><img
+          class="hero__img"
+          srcset="
+            ../src/images/hero/dish-1_m@1x.png   292w,
+            ../src/images/hero/dish-1_m@2x.png   584w,
+            ../src/images/hero/dish-1_lg@1x.png  528w,
+            ../src/images/hero/dish-1_lg@2x.png 1056w
+          "
+          sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px, 100vw"
+          src="../src/images/hero/dish-1_m@1x.png"
+          alt="food-1"
+        /></div>
+        <div class="swiper-slide border-swiper"><img
+          class="hero__img"
+          srcset="
+            ../src/images/hero/dish-2_m@1x.png   292w,
+            ../src/images/hero/dish-2_m@2x.png   584w,
+            ../src/images/hero/dish-2_lg@1x.png  528w,
+            ../src/images/hero/dish-2_lg@2x.png 1056w
+          "
+          sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px, 100vw"
+          src="../src/images/hero/dish-2_m@1x.png"
+          alt="food-2"
+        /></div>
+        <div class="swiper-slide border-swiper"><img
+          class="hero__img"
+          srcset="
+            ../src/images/hero/dish-3_m@1x.png   292w,
+            ../src/images/hero/dish-3_m@2x.png   584w,
+            ../src/images/hero/dish-3_lg@1x.png  528w,
+            ../src/images/hero/dish-3_lg@2x.png 1056w
+          "
+          sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px, 100vw"
+          src="../src/images/hero/dish-3_m@1x.png"
+          alt="food-3"
+        /></div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+   
+    <!-- <div class="swiper-one border-swiper">
       <img
         class="hero__img"
         srcset="
@@ -22,8 +75,10 @@
         src="../src/images/hero/dish-1_m@1x.png"
         alt="food-1"
       />
-    </div>
-    <div class="scrole">
+    </div> -->
+
+
+    <!-- <div class="scrole">
       <button
         class="scrole__button left-btn"
         type="button"
@@ -66,6 +121,6 @@
           <use href="./images/icons/spryte_delivery.svg#big-right"></use>
         </svg>
       </button>
-    </div>
+    </div> -->
   </div>
 </section>

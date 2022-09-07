@@ -101,27 +101,49 @@
   }
 }
 
-.swiper-one {
-  position: relative;
-  left: 380px;
-  bottom: 245;
+.swiper {
+  @media screen and (min-width: 768px) {
+    width: 320px;
+    height: 320px;
+
+    position: relative;
+    left: 389px;
+    bottom: 245;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   @media screen and (min-width: 1280px) {
+    width: 580px;
+    height: 580px;
     left: 650px;
     bottom: 430;
   }
 }
 
-.border-swiper {
+.swiper-wrapper {
   display: none;
-  width: 320px;
-  height: 320px;
-  border: 14px solid var(--main-border-color);
-  border-radius: 50%;
-  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+  }
+}
+
+.swiper-slide {
+  display: none;
 
   @media screen and (min-width: 768px) {
     display: block;
+    height: 320px;
+    border: 14px solid var(--main-border-color);
+    border-radius: 50%;
+    overflow: hidden;
   }
 
   @media screen and (min-width: 1280px) {
@@ -132,85 +154,130 @@
   }
 }
 
-.scrole {
-  &__button {
-    border: none;
-    border-radius: 8px;
-    background: #ffffff;
+// .scrole {
+//   &__button {
+//     border: none;
+//     border-radius: 8px;
+//     background: #ffffff;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+//     &:hover,
+//     &:focus {
+//       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+//       fill: #7eb101;
+//     }
+//   }
+
+//   &__icon {
+//     width: 12px;
+//     height: 20px;
+
+//     @media screen and (min-width: 1280px) {
+//       width: 17px;
+//       height: 29px;
+//     }
+//   }
+// }
+
+// .left-btn {
+//   display: none;
+//   cursor: pointer;
+
+//   @media screen and (min-width: 768px) and (max-width: 1279px) {
+//     display: block;
+//     position: relative;
+//     left: 370px;
+//     bottom: 420px;
+//     width: 34px;
+//     height: 28px;
+//   }
+// }
+
+// .right-btn {
+//   display: none;
+//   cursor: pointer;
+
+//   @media screen and (min-width: 768px) and (max-width: 1279px) {
+//     display: block;
+//     position: relative;
+//     left: 675px;
+//     bottom: 448px;
+//     width: 34px;
+//     height: 28px;
+//   }
+// }
+
+// .left-button {
+//   display: none;
+//   cursor: pointer;
+
+//   @media screen and (min-width: 1280px) {
+//     display: block;
+//     position: relative;
+//     left: 635px;
+//     bottom: 740px;
+//     width: 48px;
+//     height: 40px;
+//   }
+// }
+
+// .right-button {
+//   display: none;
+//   cursor: pointer;
+
+//   @media screen and (min-width: 1280px) {
+//     display: block;
+//     position: relative;
+//     left: 1195px;
+//     bottom: 780px;
+//     width: 48px;
+//     height: 40px;
+//   }
+// }
+
+.swiper-button-prev,
+.swiper-button-next {
+  @media screen and (min-width: 768px) {
+    position: fixed;
+    background-color: #fefefe;
+    width: 34px;
+    height: 28px;
+    border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-
-    &:hover,
-    &:focus {
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-      fill: #7eb101;
-    }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 34px 28px;
   }
-
-  &__icon {
-    width: 12px;
-    height: 20px;
-
-    @media screen and (min-width: 1280px) {
-      width: 17px;
-      height: 29px;
-    }
-  }
-}
-
-.left-btn {
-  display: none;
-  cursor: pointer;
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    display: block;
-    position: relative;
-    left: 370px;
-    bottom: 420px;
-    width: 34px;
-    height: 28px;
-  }
-}
-
-.right-btn {
-  display: none;
-  cursor: pointer;
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    display: block;
-    position: relative;
-    left: 675px;
-    bottom: 448px;
-    width: 34px;
-    height: 28px;
-  }
-}
-
-.left-button {
-  display: none;
-  cursor: pointer;
 
   @media screen and (min-width: 1280px) {
-    display: block;
-    position: relative;
-    left: 635px;
-    bottom: 740px;
     width: 48px;
     height: 40px;
+    border-radius: 8px;
+    background-size: 48px 40px;
   }
 }
 
-.right-button {
-  display: none;
-  cursor: pointer;
-
-  @media screen and (min-width: 1280px) {
-    display: block;
-    position: relative;
-    left: 1195px;
-    bottom: 780px;
-    width: 48px;
-    height: 40px;
+.swiper-button-prev {
+  @media screen and (min-width: 768px) {
+    left: -8px;
+    background-image: url(../images/icons/arrow-left.svg);
   }
+}
+
+.swiper-flip {
+  overflow: hidden;
+}
+
+.swiper-button-next {
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/icons/arrow-right.svg);
+    right: -8px;
+  }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
 }
 
 .border {
