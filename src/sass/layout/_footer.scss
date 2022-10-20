@@ -125,11 +125,22 @@
   height: 51px;
   margin-top: 60px;
 
+  animation: flip;
+  animation-duration: 2s;
+  // --animate-repeat: 3;
+
   
 
   @media screen and (min-width: 1280px) {
     margin-top: 0;
   }
+}
+
+.footer__logo-icon:hover {
+  border: 10px color transparent;
+  animation: zoomIn;
+  animation-duration: 2s;
+  --animate-delay: 0.9s;
 }
 
 .footer-nav {
@@ -161,7 +172,7 @@
     flex-direction: column;
 
     gap: 20px;
-   
+
     @media screen and (min-width: 768px) {
       flex-wrap: nowrap;
       flex-direction: row;
@@ -291,7 +302,7 @@
 
   &:invalid + .footer-form__error {
     opacity: 1;
-  }  
+  }
 
   @media screen and (min-width: 480px) {
     margin-right: 13px;
@@ -373,9 +384,6 @@
     top: -120px;
     background-color: rgba(181, 255, 0, 1);
   }
-  
-  
- 
 
   @media screen and (max-width: 767px) {
     margin-left: auto;
