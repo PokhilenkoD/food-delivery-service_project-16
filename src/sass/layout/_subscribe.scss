@@ -274,7 +274,8 @@
 }
 
 .subscribe__image:hover {
-  animation: rotate 1s linear 1 forwards;
+//   animation: rotate 1s linear 1 forwards;
+transform: scale(1.1);
 }
 
 @keyframes rotate {
